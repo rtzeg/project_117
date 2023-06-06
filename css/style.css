@@ -1,124 +1,98 @@
-@font-face {
-    font-family: "Druk wide cy";
-    src: url(../font/Druk-Wide-Cy-Web-Medium.ttf);
-    font-weight: 500;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "Nunito sans";
-    src: url(../font/NunitoSans_10pt-Light.ttf);
-    font-weight: 300;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "Nunito sans";
-    src: url(../font/NunitoSans_10pt-Regular.ttf);
-    font-weight: 400;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "Nunito sans";
-    src: url(../font/NunitoSans_10pt-SemiBold.ttf);
-    font-weight: 600;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "Nunito sans";
-    src: url(../font/NunitoSans_10pt-Bold.ttf);
-    font-weight: 700;
-    font-style: normal;
-}
-
-
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    font-family: "nunito sans";
 }
-
-.container {
-    width: 1200px;
-    margin: 0 auto;
-}
-
 
 img {
     max-width: 100%;
 }
 
-.section_6 {
-    height: 100%;
-    background: linear-gradient(101.59deg, #000000 0.72%, #424247 99.58%);
+.bg {
+    background: #515151;
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
 }
 
-.ayri_6_0 {
-    background: url(../img/Фото.png) no-repeat center / cover;
-    padding-bottom: 250px;
-    padding-top: 150px;
-    height: 100vh;
+.text {
+    display: flex;
+    flex-direction: column;
+    max-width: 530px;
+    padding-top: 210px;
+    margin-left: 315px;
 }
 
-.ayri_6 h2 {
-    font-weight: 500;
-    font-size: 50px;
-    padding-bottom: 59px;
-    color: white;
-    font-family: "druk wide cy";
-    font-weight: 500;
-}
-
-.ayri_6 span {
+.text h3 {
     background: linear-gradient(103.63deg, #FF4460 1.93%, #AD00FF 54.03%, #31CEFF 92.85%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    font-family: "druk wide cy";
-    font-weight: 500;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 50px;
 }
 
-.ayri_6 p {
-    font-weight: 400;
+.text h2 {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 50px;
+    color: #fff;
+}
+
+.text p {
+    padding-top: 65px;
+    font-family: 'Nunito Sans', sans-serif;
+    color: #fff;
     font-size: 22px;
-    margin-bottom: 50px;
-    color: white;
     font-weight: 400;
+    line-height: 30px;
 }
 
-.ayri_button button {
-    background-color: #FF4460;
-    border: none;
-    font-weight: 600;
-    font-size: 18px;
-    color: white;
-    padding: 14px 52px 16px 40px;
-    border-radius: 12px;
+#man {
+    position: absolute;
+    left: 670px;
+    top: 37px;
+    opacity: 0;
+    animation: man 3s linear;
 }
 
-.ayri_button img {
-    margin-left: 9px;
+#iron_man {
+    position: absolute;
+    left: 639px;
+    top: 174px; 
+    opacity: 1;
+    animation: iron_man 3s ease-in;
 }
 
-.footer_flex {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    padding: 50px 0 30px;
+@keyframes man {
+    from {
+        left: -100%;
+        opacity: 1;
+    }
+
+    25% {
+        left: 670px;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
 
-.footer_flex p {
-    font-weight: 300;
-    font-size: 14px;
-    color: #B3BACF;
-}
+@keyframes iron_man {
+    0% {
+        opacity: 0;
+    }   
+    25% {
+        opacity: 0;
+    }   
 
-.footer_flex a {
-    text-decoration: none;
-    font-weight: 300;
-    font-size: 14px;
-    color: #B3BACF;
+    100% {
+        opacity: 1;
+    }
 }
