@@ -1,0 +1,92 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+    
+
+img {
+    max-width: 100%;
+}
+
+.section_6 {
+    height: 100%;
+    background: linear-gradient(101.59deg, #000000 0.72%, #424247 99.58%);
+}
+.ayri_6_0 { 
+    background: url(../img/Фото.png) no-repeat center / cover;
+    padding-bottom: 250px;
+    padding-top: 150px;
+    height: 100vh;
+}
+ 
+.ayri_6 h2 {
+    font-weight: 500;
+    font-size: 50px;
+    padding-bottom: 59px;
+    color: white;
+    
+}
+
+.ayri_6 span {
+    background: linear-gradient(103.63deg, #FF4460 1.93%, #AD00FF 54.03%, #31CEFF 92.85%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.ayri_6 p {
+    font-weight: 400;
+    font-size: 22px;
+    margin-bottom: 50px;
+    color: white;
+}
+
+.ayri_button button {
+    background-color: #FF4460;
+    border: none;
+    font-weight: 600;
+    font-size: 18px;
+    color: white;
+    padding: 14px 52px 16px 40px;
+    border-radius: 12px;
+}
+
+.ayri_button img {
+    margin-left: 9px;
+}
+
+.footer_flex {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 50px 0 30px;
+}
+
+.footer_flex p {
+    font-weight: 300;
+font-size: 14px;
+color: #B3BACF;
+}
+
+.footer_flex a {
+    text-decoration: none;
+    font-weight: 300;
+font-size: 14px;
+color: #B3BACF;
+}
+
+    
+
+
+    
+
+  
+
+  
+    
