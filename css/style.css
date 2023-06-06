@@ -4,18 +4,28 @@
     font-weight: 500;
     font-style: normal;
 }
+
+@font-face {
+    font-family: "Nunito sans";
+    src: url(../font/NunitoSans_10pt-Light.ttf);
+    font-weight: 300;
+    font-style: normal;
+}
+
 @font-face {
     font-family: "Nunito sans";
     src: url(../font/NunitoSans_10pt-Regular.ttf);
     font-weight: 400;
     font-style: normal;
 }
+
 @font-face {
     font-family: "Nunito sans";
     src: url(../font/NunitoSans_10pt-SemiBold.ttf);
     font-weight: 600;
     font-style: normal;
 }
+
 @font-face {
     font-family: "Nunito sans";
     src: url(../font/NunitoSans_10pt-Bold.ttf);
@@ -23,88 +33,92 @@
     font-style: normal;
 }
 
+
 * {
-    font-family: "Nunito sans";
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "nunito sans";
 }
 
-.header {
-    width: 100%;
-    position: fixed;
-}
-
-
-.header_nav {
-    max-width: 1300px;
-    height: 100px;
+.container {
+    width: 1200px;
     margin: 0 auto;
+}
+
+
+img {
+    max-width: 100%;
+}
+
+.section_6 {
+    height: 100%;
+    background: linear-gradient(101.59deg, #000000 0.72%, #424247 99.58%);
+}
+
+.ayri_6_0 {
+    background: url(../img/Фото.png) no-repeat center / cover;
+    padding-bottom: 250px;
+    padding-top: 150px;
+    height: 100vh;
+}
+
+.ayri_6 h2 {
+    font-weight: 500;
+    font-size: 50px;
+    padding-bottom: 59px;
+    color: white;
+    font-family: "druk wide cy";
+    font-weight: 500;
+}
+
+.ayri_6 span {
+    background: linear-gradient(103.63deg, #FF4460 1.93%, #AD00FF 54.03%, #31CEFF 92.85%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-family: "druk wide cy";
+    font-weight: 500;
+}
+
+.ayri_6 p {
+    font-weight: 400;
+    font-size: 22px;
+    margin-bottom: 50px;
+    color: white;
+    font-weight: 400;
+}
+
+.ayri_button button {
+    background-color: #FF4460;
+    border: none;
+    font-weight: 600;
+    font-size: 18px;
+    color: white;
+    padding: 14px 52px 16px 40px;
+    border-radius: 12px;
+}
+
+.ayri_button img {
+    margin-left: 9px;
+}
+
+.footer_flex {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-
+    gap: 20px;
+    justify-content: center;
+    padding: 50px 0 30px;
 }
 
-.header_menu {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    width: 300px;
+.footer_flex p {
+    font-weight: 300;
+    font-size: 14px;
+    color: #B3BACF;
 }
 
-.header_menu li a {
-    color: black;
-    font-size: 16px;
-    line-height: 22px;
-}
-.header_menu li a:hover {
-    text-decoration: underline;
-}
-.header_menu li a:active {
+.footer_flex a {
     text-decoration: none;
+    font-weight: 300;
+    font-size: 14px;
+    color: #B3BACF;
 }
-
-.login-img {
-    vertical-align: text-bottom;
-    margin-right: 5px;
-}
-
-.menu-link {
-    display: flex;
-    align-items: center;
-}
-
-.menu-dec {
-    display: block;
-    position: relative;
-    width: 20px;
-    height: 14px;
-    margin-right: 5px;
-}
-
-.menu-arrow1 {
-position: absolute;
-    width: 10px;
-    height: 2px;
-    border-radius: 4px;
-    top: 0;
-    background-color: black;
-}
-
-.menu-arrow2 {
-position: absolute;
-    width: 15px;
-    height: 2px;
-    border-radius: 4px;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: black;
-}
-
-.menu-arrow3 {
-    position: absolute;
-    width: 20px;
-    height: 2px;
-    border-radius: 4px;
-    bottom: 0;
-    background-color: black;
-}
-
