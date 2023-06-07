@@ -1,0 +1,146 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body img {
+    max-width: 100%;
+}
+
+// .container {
+//     max-width: 1440px;
+//     margin: 0 auto;
+// }
+
+.more_activity {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+
+    .left_page {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .inner_left_page {
+            height: 300px;
+            width: 400px;
+            margin: 100px 120px;
+
+
+            h1 {
+                font-family: 'Druk Wide Cyr';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 45px;
+                line-height: 50px;
+                color: #04242B;
+            }
+
+            h2 {
+                font-family: 'Druk Wide Cyr';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 45px;
+                line-height: 50px;
+                background: linear-gradient(103.63deg, #FF4460 1.93%, #AD00FF 54.03%, #31CEFF 92.85%);
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                padding-bottom: 30px;
+            }
+
+            p {
+                font-family: 'Nunito Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 30px;
+                color: #04242B;
+                padding-bottom: 20px;
+            }
+
+            .btn {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                background: #FF4460;
+                border-radius: 12px;
+                width: 200px;
+                height: 40px;
+                font-family: 'Nunito Sans';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 15px;
+                line-height: 20px;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                color: #FFFFFF;
+                margin-bottom: 50px;
+            }
+
+            .more_activity_footer {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+
+                img {
+                    padding-right: 50px;
+                }
+
+                .btn_slider1, .btn_slider2, .btn_slider3, .btn_slider4 {
+                    width: 60px;
+                    height: 4px;
+                    left: 490px;
+                    top: 3566px;
+
+                    /* Сервисное/Объект */
+
+                    background: #B3BACF;
+                    opacity: 0.25;
+                    border-radius: 9px;
+                }
+            }
+
+        }
+    }
+
+    .right_page {
+        position: relative;
+        width: 100%;
+
+        overflow: hidden;
+
+        // .inner_right_page {
+
+        // }
+
+
+        img {
+
+            // width: 800px;
+            height: 100vh;
+            // width: 850px;
+            position: absolute;
+
+        }
+
+        h3 {
+            position: absolute;
+            font-family: 'Druk Wide Cyr';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 50px;
+            // line-height: 50px;
+            color: #FFFFFF;
+            padding-top: 100px;
+            padding-left: 100px;
+        }
+    }
+
+
+}
