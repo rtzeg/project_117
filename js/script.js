@@ -10,6 +10,8 @@ let description1 = doc.querySelector("#description-1")
 let description2 = doc.querySelector("#description-2")
 let description3 = doc.querySelector("#description-3")
 let description4 = doc.querySelector("#description-4")
+let tariff_img_span = doc.querySelector(".tariff-img-span")
+let tariff_img_title = doc.querySelector(".tariff-img-title")
 
 
 function fn(a,b,c) {
@@ -20,15 +22,24 @@ function fn(a,b,c) {
 
 line_one.addEventListener("click", () => {
     fn(line_one,line_two,line_three)
-    tariff_img.style.backgroundImage = "url('../img/tariff-img.png')"
+    tariff_img.style.backgroundImage = 'url("img/tariff-img.png")'
+    tariff_img_title.textContent = "А так я получается"
+    tariff_img_span.textContent = "экономлю"
+    tariff_img_title.style.color = "#04242B"
 })
 line_two.addEventListener("click", () => {
     fn(line_two,line_one,line_three)
-    tariff_img.style.backgroundImage = "url('../img/tariff-img2.png')"
+    tariff_img.style.backgroundImage = "url('img/tariff-img2.png')"
+    tariff_img_span.textContent = "Хасбик"
+    tariff_img_title.textContent = "А так я получается"
+    tariff_img_title.style.color = "white"
 })
 line_three.addEventListener("click", () => {
     fn(line_three,line_two,line_one)
-    tariff_img.style.backgroundImage = "url('../img/tariff-img3.png')"
+    tariff_img.style.backgroundImage = "url('img/tariff-img3.png')"
+    tariff_img_span.textContent = "Хасбик???"
+    tariff_img_title.textContent = "А когда не"
+    tariff_img_title.style.color = "white"
 })
 
 function functionBtn(a,b,c){
