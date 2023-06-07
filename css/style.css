@@ -133,11 +133,9 @@
     font-weight: 500;
     font-size: 50px;
     line-height: 50px;
-    background: linear-gradient(103.63deg, #FF4460 1.93%, #AD00FF 54.03%, #31CEFF 92.85%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
+    background: linear-gradient(103.63deg, #FF4460 1.93%, #AD00FF 54.03%, #31CEFF 92.85%);
 }
 
 .div_box_sec1 p {
@@ -228,11 +226,12 @@
 
 }
 
-.div_box_sec1 a {
-    color: white;
-}
-.div_box_sec1 h2{
-    width: 400px;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "nunito sans";
 }
 .btn_1 {
     width: 230px;
@@ -408,25 +407,6 @@
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 20px;
-    color: #FF4460;
-    text-decoration: line-through;
-    display: flex;
-    justify-content: end;
-}
-
-.button-active {
-    background: #FFF;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 370px;
-    padding: 15px;
-    margin-top: 15px;
-    cursor: pointer;
-    border: 2px solid;
-    border-image: linear-gradient(103.63deg, #FF4460 1.93%, #AD00FF 54.03%, #31CEFF 92.85%);
-    border-image-slice: 1;
-    border-radius: 12px;
+    color: #B3BACF;
 }
 /* section-5 end */

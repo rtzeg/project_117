@@ -1,3 +1,4 @@
+
 let doc = document
 let line_one = doc.querySelector(".tariff-line-1")
 let line_two = doc.querySelector(".tariff-line-2")
@@ -69,3 +70,16 @@ btn_three.onclick = () => {
     functionBtn(btn_three, btn_two, btn_one)
     changeText("Че писать-то?","У мужлан нет прав","Здесь поменялся текст","Здесь тоже")
 }
+const menu = document.querySelector('.menu-link');
+const menu_arrow1_anim = document.querySelector('.menu-arrow1')
+const menu_arrow2_anim = document.querySelector('.menu-arrow2')
+const menu_arrow3_anim = document.querySelector('.menu-arrow3')
+
+menu.addEventListener("click", function (e) {
+
+    menu_arrow1_anim.classList.toggle('menu-arrow1-anim')
+    menu_arrow2_anim.classList.toggle('menu-arrow2-anim')
+    menu_arrow3_anim.classList.toggle('menu-arrow3-anim')
+
+} ) 
+
