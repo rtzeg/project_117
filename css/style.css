@@ -96,7 +96,6 @@ body img {
 .more_activity .right_page {
   position: relative;
   width: 100%;
-  overflow: hidden;
 }
 .more_activity .right_page img {
   height: 100vh;
